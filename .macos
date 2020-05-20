@@ -1,0 +1,36 @@
+#!/bin/zsh
+
+# Based on the work of Mathias Bynens
+# # ~/.macos — https://mths.be/macos
+
+###############################################################################
+# General UI/UX                                                               #
+###############################################################################
+
+
+###############################################################################
+# Dock                                                                        #
+###############################################################################
+
+# Don’t show recent applications in Dock
+defaults write com.apple.dock show-recents -bool false
+
+
+###############################################################################
+# Energy saving                                                               #
+###############################################################################
+
+# Menu bar: show battery percentage
+defaults write com.apple.menuextra.battery ShowPercent YES
+
+
+###############################################################################
+# Finder                                                                      #
+###############################################################################
+
+# Finder: show all filename extensions
+# defaults write NSGlobalDomain AppleShowAllExtensions -bool true
+
+# Avoid creating .DS_Store files on network or USB volumes
+defaults write com.apple.desktopservices DSDontWriteNetworkStores -bool true
+defaults write com.apple.desktopservices DSDontWriteUSBStores -bool true
