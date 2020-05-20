@@ -1,0 +1,17 @@
+# Compiled Code
+*.class
+*.o
+*.so
+
+# Logs
+*.log
+
+# Edit Tools 
+*~
+~*
+
+# OS generated files
+.DS_Store
+.Spotlight-V100
+.Trashes
+Icon?

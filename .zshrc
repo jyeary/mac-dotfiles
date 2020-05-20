@@ -4,6 +4,8 @@
 # Path to your dotfiles installation.
 export DOTFILES=$HOME/.dotfiles
 
+# Enable completions
+autoload -Uz compinit && compinit
 
 # Path to your oh-my-zsh installation.
 export ZSH="/Users/jyeary/.oh-my-zsh"

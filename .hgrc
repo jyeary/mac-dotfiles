@@ -1,0 +1,32 @@
+[ui]
+username = John Yeary <jyeary@bluelotussoftware.com>
+# merge = opendiff-w
+merge = p4
+editor = nano
+
+[merge-tools]
+# opendiff-w.args = $base $local -merge $output
+# p4.priority = 60
+# change this to False if you're don't trust hg's internal merge
+p4.premerge = True
+p4.executable = /Applications/p4merge.app/Contents/Resources/launchp4merge
+p4.gui = True
+p4.args = $base $local $other $output
+
+[extensions]
+churn =
+color =
+graphlog =
+hgk = 
+keyword = 
+purge = 
+#transplant = 
+convert =
+#hggit =
+shelve =
+strip =
+
+[keyword]
+**.java =
+**.xhtml =
+**.xml =
