@@ -4,8 +4,8 @@ tap 'homebrew/cask'
 
 # Binaries
 brew 'jq'
-brew 'maven'
 brew 'mas' # Mac App Store manager
+brew 'maven'
 brew 'neovim'
 
 # Apps
