@@ -1,6 +1,7 @@
 # Taps
 tap 'homebrew/bundle'
 tap 'homebrew/cask'
+tap 'homebrew/cask-versions'
 
 # Binaries
 brew 'jq'
@@ -13,6 +14,13 @@ cask 'adobe-acrobat-reader'
 cask 'apache-directory-studio'
 cask 'atom'
 cask 'dashlane'
+cask 'dropbox'
+cask 'firefox-developer-edition'
+cask 'google-backup-and-sync'
+cask 'google-chrome'
+cask 'gpg-suite'
+cask 'jd-gui'
+cask 'kitematic'
 cask 'mysqlworkbench'
 cask 'slack'
 cask 'vagrant'
