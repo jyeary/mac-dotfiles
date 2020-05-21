@@ -34,6 +34,7 @@ cask 'vagrant'
 cask 'virtualbox'
 cask 'virtualbox-extension-pack'
 cask 'visualvm'
+cask 'visual-studio-code'
 cask 'zoomus'
 
 # Mac App Store
