@@ -17,3 +17,6 @@ syntax: glob
 .Spotlight-V100
 .Trashes
 Icon?
+
+# Application generated files
+Brewfile.lock.json
