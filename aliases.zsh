@@ -17,3 +17,8 @@ alias hide="defaults write com.apple.finder AppleShowAllFiles -bool false && kil
 # Hide/show all desktop icons (useful when presenting)
 alias hidedesktop="defaults write com.apple.finder CreateDesktop -bool false && killall Finder"
 alias showdesktop="defaults write com.apple.finder CreateDesktop -bool true && killall Finder"
+
+# Docker - Use single quotes to avoid interpolation between double quotes.
+
+# Start a Ruby image a shell to do Jekyll development in the current directory.
+alias docker-blog='docker container run -it -rm -p 4000:4000 -v `pwd`:/blog ruby:2.6.5 /bin/bash'
