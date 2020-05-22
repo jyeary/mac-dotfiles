@@ -35,6 +35,7 @@ cask 'virtualbox'
 cask 'virtualbox-extension-pack'
 cask 'visualvm'
 cask 'visual-studio-code'
+cask 'vmware-fusion'
 cask 'zoomus'
 
 # Mac App Store
