@@ -1,3 +1,4 @@
+# Display the weather
 alias weather="curl -4 http://wttr.in"
 
 # Recursively remove .DS_Store files
@@ -21,4 +22,4 @@ alias showdesktop="defaults write com.apple.finder CreateDesktop -bool true && k
 # Docker - Use single quotes to avoid interpolation between double quotes.
 
 # Start a Ruby image a shell to do Jekyll development in the current directory.
-alias docker-blog='docker container run -it -rm -p 4000:4000 -v `pwd`:/blog ruby:2.6.5 /bin/bash'
+alias docker-blog='docker container run -it --rm -p 4000:4000 -v `pwd`:/blog ruby:2.6.6 /bin/bash'
