@@ -4,7 +4,8 @@ tap 'homebrew/cask'
 tap 'homebrew/cask-versions'
 
 # Binaries
-brew 'jq'
+brew 'go' # GO programming language
+brew 'jq' # JSON processor
 brew 'mas' # Mac App Store manager
 brew 'maven'
 brew 'neovim'
@@ -28,6 +29,7 @@ cask 'p4v'
 cask 'pycharm-ce'
 cask 'skype-for-business'
 cask 'slack'
+cask 'soapui'
 cask 'sourcetree'
 cask 'sync'
 cask 'vagrant'
