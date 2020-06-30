@@ -8,6 +8,7 @@ brew 'go' # GO programming language
 brew 'jq' # JSON processor
 brew 'mas' # Mac App Store manager
 brew 'maven'
+brew 'mercurial'
 brew 'neovim'
 
 # Apps
