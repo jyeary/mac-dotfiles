@@ -20,3 +20,6 @@ Icon?
 
 # Application generated files
 Brewfile.lock.json
+
+# Special Files
+.secrets
