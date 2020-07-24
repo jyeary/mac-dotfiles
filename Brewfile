@@ -10,6 +10,7 @@ brew 'mas' # Mac App Store manager
 brew 'maven'
 brew 'mercurial'
 brew 'neovim'
+brew 'python'
 
 # Apps
 cask 'adobe-acrobat-reader'
