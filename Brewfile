@@ -4,6 +4,7 @@ tap 'homebrew/cask'
 tap 'homebrew/cask-versions'
 
 # Binaries
+brew 'ant' # Apache Ant
 brew 'go' # GO programming language
 brew 'jq' # JSON processor
 brew 'mas' # Mac App Store manager
