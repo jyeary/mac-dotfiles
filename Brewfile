@@ -33,7 +33,6 @@ cask 'postman'
 cask 'pycharm-ce'
 cask 'skype-for-business'
 cask 'slack'
-cask 'soapui'
 cask 'sourcetree'
 cask 'sync'
 cask 'vagrant'
@@ -42,7 +41,9 @@ cask 'virtualbox-extension-pack'
 cask 'visualvm'
 cask 'visual-studio-code'
 cask 'vmware-fusion'
-cask 'zoomus'
+cask 'zoom'
+cask 'zulu8'
+cask 'zulu11'
 
 # Mac App Store
 mas 'Microsoft Remote Desktop', id: 1295203466
