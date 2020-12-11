@@ -20,7 +20,6 @@ cask 'atom'
 cask 'dashlane'
 cask 'dropbox'
 cask 'firefox-developer-edition'
-cask 'flash-npapi' # Adobe Flash Player for Safari and Firefox
 cask 'google-backup-and-sync'
 cask 'google-chrome'
 cask 'gpg-suite'
