@@ -16,7 +16,7 @@ brew 'python'
 # Apps
 cask 'adobe-acrobat-reader'
 cask 'apache-directory-studio'
-cask 'atom'
+# cask 'atom' # Atom leaves dirty uninstall.
 cask 'dashlane'
 cask 'dropbox'
 cask 'firefox-developer-edition'
@@ -42,8 +42,8 @@ cask 'visualvm'
 cask 'visual-studio-code'
 cask 'vmware-fusion'
 cask 'zoom'
-cask 'zulu8'
-cask 'zulu11'
+cask 'zulu8'  # Java 8
+cask 'zulu11' # Java 11
 
 # Mac App Store
 mas 'Microsoft Remote Desktop', id: 1295203466
