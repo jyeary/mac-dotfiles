@@ -35,6 +35,9 @@ ln -s $HOME/.dotfiles/.hgignore_global $HOME/.hgignore_global
 # Symlink the Mackup config file to the home directory
 # ln -s $HOME/.dotfiles/.mackup.cfg $HOME/.mackup.cfg
 
+# Quit System Preferences before updating macOS preferences.
+killall System\ Preferences > /dev/null 2>&1
+
 # Set macOS preferences
 # We will run this last because this will reload the shell
 source .macos
