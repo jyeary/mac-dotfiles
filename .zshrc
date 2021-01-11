@@ -104,3 +104,7 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+
+# jEnv Setup
+export PATH="$HOME/.jenv/bin:$PATH"
+eval "$(jenv init -)"
