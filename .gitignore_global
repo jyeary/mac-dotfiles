@@ -21,3 +21,5 @@ Brewfile.lock.json
 
 # Special Files
 .secrets
+
+/**/nb-configuration.xml
