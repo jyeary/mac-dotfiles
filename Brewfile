@@ -15,6 +15,7 @@ brew 'python'
 
 # Apps
 cask 'adobe-acrobat-reader'
+cask 'android-studio'
 cask 'apache-directory-studio'
 # cask 'atom' # Atom leaves dirty uninstall.
 cask 'dashlane'
@@ -24,6 +25,8 @@ cask 'git-lfs'
 cask 'google-backup-and-sync'
 cask 'google-chrome'
 cask 'gpg-suite'
+cask 'gradle'
+cask 'groovy'
 cask 'jenv'
 cask 'jd-gui'
 cask 'keystore-explorer'
