@@ -37,7 +37,6 @@ cask 'ngrok'
 cask 'p4v'
 cask 'postman'
 cask 'pycharm-ce'
-# cask 'skype-for-business'
 cask 'slack'
 cask 'sourcetree'
 cask 'sync'
@@ -48,8 +47,8 @@ cask 'visualvm'
 cask 'visual-studio-code'
 cask 'vmware-fusion'
 cask 'zoom'
-cask 'zulu8'  # Java 8
-cask 'zulu11' # Java 11
+# cask 'zulu8'  # Java 8
+# cask 'zulu11' # Java 11
 
 # Mac App Store
 mas 'Microsoft Remote Desktop', id: 1295203466
