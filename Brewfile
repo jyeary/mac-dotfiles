@@ -2,6 +2,8 @@
 tap 'homebrew/bundle'
 tap 'homebrew/cask'
 tap 'homebrew/cask-versions'
+tap 'homebrew/core'
+tap 'graalvm/tap'
 
 # Binaries
 brew 'ant' # Apache Ant
@@ -27,6 +29,7 @@ cask 'google-chrome'
 cask 'gpg-suite'
 cask 'gradle'
 cask 'groovy'
+cask 'graalvm-ce-java11'
 cask 'jenv'
 cask 'jd-gui'
 cask 'keystore-explorer'

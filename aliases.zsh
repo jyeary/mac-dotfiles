@@ -23,3 +23,6 @@ alias showdesktop="defaults write com.apple.finder CreateDesktop -bool true && k
 
 # Start a Ruby image a shell to do Jekyll development in the current directory.
 alias docker-blog='docker container run -it --rm -p 4000:4000 -v `pwd`:/blog ruby:2.7.3 /bin/bash'
+
+# AWS
+alias aws="docker run --rm -it -v ~/.aws:/root/.aws -v $(pwd):/aws -e AWS_PROFILE amazon/aws-cli:2.3.4"
