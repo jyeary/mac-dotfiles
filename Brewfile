@@ -1,4 +1,6 @@
 # Taps
+tap 'cesanta/mos'
+tap 'graalvm/tap'
 tap 'homebrew/bundle'
 tap 'homebrew/cask'
 tap 'homebrew/cask-versions'
@@ -12,6 +14,7 @@ brew 'jq' # JSON processor
 brew 'mas' # Mac App Store manager
 brew 'maven'
 brew 'mercurial'
+brew 'mos'
 brew 'neovim'
 brew 'python'
 
