@@ -26,3 +26,6 @@ alias docker-blog='docker container run -it --rm -p 4000:4000 -v `pwd`:/blog rub
 
 # AWS
 #alias aws="docker run --rm -it -v ~/.aws:/root/.aws -v $(pwd):/aws -e AWS_PROFILE amazon/aws-cli:2.3.4"
+
+# GCP
+alias gcloud='docker run --rm -ti --volumes-from gcloud-config google/cloud-sdk:365.0.1 gcloud'
