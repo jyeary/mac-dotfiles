@@ -52,6 +52,7 @@ cask 'virtualbox-extension-pack'
 cask 'visualvm'
 cask 'visual-studio-code'
 cask 'vmware-fusion'
+cask 'wireshark'
 cask 'zoom'
 # cask 'zulu8'  # Java 8
 # cask 'zulu11' # Java 11
