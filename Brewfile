@@ -12,17 +12,17 @@ brew 'ant' # Apache Ant
 brew 'go' # GO programming language
 brew 'jq' # JSON processor
 brew 'mas' # Mac App Store manager
-brew 'maven'
-brew 'mercurial'
-brew 'mos'
-brew 'neovim'
-brew 'python'
+brew 'maven' # Apache Maven
+brew 'mercurial' # Mercurial Source Control System (SCS)
+brew 'mos' # Mongoose OS
+brew 'neovim' # Neovim Text Editor
+brew 'python' # Python Programming Language
 
 # Apps
 cask 'adobe-acrobat-reader'
 cask 'android-studio'
 cask 'apache-directory-studio'
-# cask 'atom' # Atom leaves dirty uninstall.
+# cask 'atom' # Atom Editor (leaves dirty uninstall)
 cask 'dashlane'
 cask 'dropbox'
 cask 'firefox-developer-edition'
@@ -52,7 +52,7 @@ cask 'virtualbox-extension-pack'
 cask 'visualvm'
 cask 'visual-studio-code'
 cask 'vmware-fusion'
-cask 'wireshark'
+# cask 'wireshark'
 cask 'zoom'
 # cask 'zulu8'  # Java 8
 # cask 'zulu11' # Java 11
