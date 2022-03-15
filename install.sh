@@ -52,7 +52,8 @@ if [ -d $HOME/.oh-my-zsh ]; then
 fi
 
 # Backup .zshrc from $HOME (if it exists) and symlinks the .zshrc file from the .dotfiles
-if ! [ -f $HOME/.zshrc.backup ]; then
+if ! [ -f $HOME/.zshrc.backup ]  &&  ! [ -L $HOME/.zshrc ]; then
+    echo "Backup .zshrc to .zshrc.backup"
     mv $HOME/.zshrc $HOME/.zshrc.backup
 fi
 
@@ -74,6 +75,10 @@ fi
 if ! [ -L $HOME/.hgignore_global ]; then
     ln -s $HOME/.dotfiles/.hgignore_global $HOME/.hgignore_global
 fi
+
+# Xcode License and reset develer tools 
+#sudo xcodebuild -license accept
+#sudo xcode-select -r 
 
 # Update global git config
 git lfs install
