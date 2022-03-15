@@ -105,9 +105,25 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
+if [ "$(sysctl -n sysctl.proc_translated)" = "1" ]; then
+    local brew_path="/usr/local/homebrew/bin"
+else
+    local brew_path="/opt/homebrew/bin"
+fi
+export PATH="${brew_path}:${PATH}"
+
 # jEnv Setup
 export PATH="$HOME/.jenv/bin:$PATH"
 eval "$(jenv init -)"
+
+# Add plugins to jenv_plugins array to enable
+jenv_plugins=('ant' 'export' 'gradle' 'groovy' 'maven' 'springboot')
+jenv_enabled_plugins=(`jenv plugins --enabled`)
+jenv_enable=(`echo ${jenv_plugins[@]} ${jenv_enabled_plugins[@]} | tr ' ' '\n' | sort | uniq -u`)
+
+for i in $jenv_enable; do
+  jenv enable-plugin $i end
+done
 
 # NVM
 export NVM_DIR="$HOME/.nvm"
