@@ -18,6 +18,7 @@ Icon?
 
 # Application generated files
 Brewfile.lock.json
+Brewfile.arm64.lock.json
 
 # Special Files
 .secrets
