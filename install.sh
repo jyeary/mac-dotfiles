@@ -119,6 +119,33 @@ plutil -replace  Window\ Settings.Solarized\ Dark.Font -xml "$font" ~/Library/Pr
 # Quit System Preferences before updating macOS preferences.
 killall System\ Preferences > /dev/null 2>&1
 
+
+# Install Docker
+if [ "${arch_name}" = "arm64" ]; then 
+    if ! [ -d /Applications/Docker.app ]; then
+        echo "Installing Docker for Arm" \
+        && curl -OL --output-dir $HOME/Downloads https://desktop.docker.com/mac/main/arm64/Docker.dmg \
+        && sudo hdiutil attach $HOME/Downloads/Docker.dmg \
+        && sudo cp -R /Volumes/Docker/Docker.app /Applications \
+        && sudo hdiutil unmount /Volumes/Docker \
+        && echo "Docker installed"
+    else 
+        echo "Docker for Arm is installed"
+    fi
+elif [ "${arch_name}" = "x86_64" ]; then
+    if ! [ -d /Applications/Docker.app ]; then
+        echo "Installing Docker for Intel" \
+        && curl -OL --output-dir $HOME/Downloads https://desktop.docker.com/mac/main/amd64/Docker.dmg \
+        && sudo hdiutil attach $HOME/Downloads/Docker.dmg \
+        && sudo cp -R /Volumes/Docker/Docker.app /Applications \
+        && sudo hdiutil unmount /Volumes/Docker \
+        && echo "Docker installed"
+     else 
+        echo "Docker for Intel is installed"
+    fi
+fi
+
+
 # Set macOS preferences
 # We will run this last because this will reload the shell
 # source .macos
