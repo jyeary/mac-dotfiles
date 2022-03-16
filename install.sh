@@ -62,6 +62,14 @@ if ! [ -L $HOME/.zshrc ]; then
     ln -s $HOME/.dotfiles/.zshrc $HOME/.zshrc
 fi
 
+# Install our custom Solarized Dark Profile to terminal
+echo "Installing Solarized Dark Theme"
+theme=$(<./terminal/Solarized%20Dark.terminal)
+plutil -replace Window\ Settings.Solarized\ Dark -xml "$theme" ~/Library/Preferences/com.apple.Terminal.plist
+defaults write com.apple.Terminal "Default Window Settings" -string "Solarized Dark"
+defaults write com.apple.Terminal "Startup Window Settings" -string "Solarized Dark"
+defaults write com.apple.Terminal "NSWindow Frame TTWindow Solarized Dark" -string  "163 195 1210 884 0 0 1728 1079 "
+
 # Git SCM Configuration
 if ! [ -L $HOME/.gitignore_global ]; then
     ln -s $HOME/.dotfiles/.gitignore_global $HOME/.gitignore_global
@@ -77,13 +85,26 @@ if ! [ -L $HOME/.hgignore_global ]; then
 fi
 
 # Xcode License and reset develer tools 
-#sudo xcodebuild -license accept
-#sudo xcode-select -r 
+sudo xcodebuild -license accept
+sudo xcode-select -r 
 
 # Update global git config
 git lfs install
 # Update system git config
 sudo git lfs install --system
+
+# Install Powerline Fonts
+echo "Installing Poweline Fonts"
+if ! [ -d ./fonts ]; then
+    git clone https://github.com/powerline/fonts.git --depth=1
+fi
+cd fonts
+./install.sh
+cd ..
+rm -rf fonts
+echo "Updating Terminal Solarized Dark Profile font to use Powerline Font"
+font=$(<./terminal/font.xml)
+plutil -replace  Window\ Settings.Solarized\ Dark.Font -xml "$font" ~/Library/Preferences/com.apple.Terminal.plist
 
 # Quit System Preferences before updating macOS preferences.
 killall System\ Preferences > /dev/null 2>&1

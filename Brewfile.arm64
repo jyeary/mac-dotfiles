@@ -23,7 +23,6 @@ brew 'neovim' 	    # Neovim Text Editor
 
 brew 'gradle'	    # Gradle Build Tool
 
-
 #cask 'adobe-acrobat-reader'
 cask 'android-studio'
 #cask 'apache-directory-studio'
@@ -62,4 +61,3 @@ mas 'OneDrive', id: 823766827
 # mas 'Server', id: 883878097
 mas 'The Unarchiver', id: 425424353
 mas 'Xcode', id: 497799835
-
