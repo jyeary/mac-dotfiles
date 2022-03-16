@@ -128,6 +128,7 @@ if [ "${arch_name}" = "arm64" ]; then
         && sudo hdiutil attach $HOME/Downloads/Docker.dmg \
         && sudo cp -R /Volumes/Docker/Docker.app /Applications \
         && sudo hdiutil unmount /Volumes/Docker \
+        && rm $HOME/Downloads/Docker.dmg \
         && echo "Docker installed"
     else 
         echo "Docker for Arm is installed"
@@ -139,6 +140,7 @@ elif [ "${arch_name}" = "x86_64" ]; then
         && sudo hdiutil attach $HOME/Downloads/Docker.dmg \
         && sudo cp -R /Volumes/Docker/Docker.app /Applications \
         && sudo hdiutil unmount /Volumes/Docker \
+        && rm $HOME/Downloads/Docker.dmg \
         && echo "Docker installed"
      else 
         echo "Docker for Intel is installed"
