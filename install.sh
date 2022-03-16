@@ -18,6 +18,16 @@ else
     echo "Unknown architecture: ${arch_name}"
 fi
 
+# Check for M1 ARM architecture and install Rosetta 2
+if [ "${arch_name}" = "arm64" ]; then
+    if ! [ $(/usr/bin/pgrep oahd >/dev/null 2>&1;echo $?) -eq 0 ]; then
+        echo "Installing Rosetta 2 for X86_64 emulation"
+        softwareupdate --install-rosetta --agree-to-license
+    else
+        echo "Rosetta 2 already installed"
+    fi
+fi
+
 # Check for Homebrew and install if we don't have it
 if test ! $(which brew); then
   /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
