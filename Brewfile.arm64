@@ -13,6 +13,7 @@ cask 'zulu11'   # Java 11
 cask 'zulu'     # Java 17+
 
 brew 'ant'	        # Apache Ant
+brew 'awscli'       # AWS CLI v 2.0
 brew 'git-lfs'      # Git Large File Storage (LFS)
 brew 'groovy'       # Groovy Language
 brew 'jenv' 	    # Java Environment Manager
@@ -43,6 +44,7 @@ cask 'ngrok'
 #cask 'p4v'
 cask 'postman'
 cask 'pycharm-ce'
+cask 'session-manager-plugin'
 cask 'slack'
 cask 'sourcetree'
 #cask 'sync'

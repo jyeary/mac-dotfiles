@@ -9,6 +9,7 @@ tap 'graalvm/tap'
 
 # Binaries
 brew 'ant' # Apache Ant
+brew 'awscli' # AWS CLI v. 2.0
 brew 'go' # GO programming language
 brew 'jq' # JSON processor
 brew 'mas' # Mac App Store manager
@@ -43,6 +44,7 @@ cask 'ngrok'
 cask 'p4v'
 cask 'postman'
 cask 'pycharm-ce'
+cask 'session-manager-plugin'
 cask 'slack'
 cask 'sourcetree'
 cask 'sync'
