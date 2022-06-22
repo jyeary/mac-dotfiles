@@ -105,7 +105,7 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-if [ "$(sysctl -n sysctl.proc_translated)" = "1" ]; then
+if [ "$(sysctl -in sysctl.proc_translated)" = "1" ]; then
     local brew_path="/usr/local/homebrew/bin"
 else
     local brew_path="/opt/homebrew/bin"
