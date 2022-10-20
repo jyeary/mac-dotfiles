@@ -10,7 +10,8 @@ brew 'python'	# Python programming language
 
 cask 'zulu8'    # Java 8
 cask 'zulu11'   # Java 11
-cask 'zulu'     # Java 17+
+cask 'zulu17'   # Java 17
+cask 'zulu'     # Java 19+
 
 brew 'ant'	        # Apache Ant
 brew 'awscli'       # AWS CLI v 2.0
