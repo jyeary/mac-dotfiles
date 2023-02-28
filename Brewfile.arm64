@@ -22,6 +22,7 @@ brew 'jq' 	        # JSON processor
 brew 'maven', args: ["ignore-dependencies"] # Apache Maven
 brew 'mercurial'    # Mercurial Source Control System (SCS)
 brew 'neovim' 	    # Neovim Text Editor
+brew 'pyenv'        # Install Python Environment Manager
 
 brew 'gradle'	    # Gradle Build Tool
 

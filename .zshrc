@@ -135,3 +135,12 @@ export ANDROID_SDK_ROOT=/Users/johnyeary/Library/Android/sdk
 if [ -n "/usr/local/opt/groovy/libexec/bin/groovy" ]; then
     export GROOVY_HOME=/usr/local/opt/groovy/libexec
 fi
+
+# Add JBang to environment
+alias j!=jbang
+export PATH="$HOME/.jbang/bin:$PATH"
+
+# Add pyenv to environment
+export PYENV_ROOT="$HOME/.pyenv"
+command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init -)"
