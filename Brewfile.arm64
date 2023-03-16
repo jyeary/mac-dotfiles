@@ -23,7 +23,9 @@ brew 'maven', args: ["ignore-dependencies"] # Apache Maven
 brew 'mercurial'    # Mercurial Source Control System (SCS)
 brew 'neovim' 	    # Neovim Text Editor
 brew 'pyenv'        # Install Python Environment Manager
+brew 'watch'        # watch command
 
+# Install gradle after Groovy
 brew 'gradle'	    # Gradle Build Tool
 
 #cask 'adobe-acrobat-reader'
