@@ -143,7 +143,7 @@ export PATH="$HOME/.jbang/bin:$PATH"
 # Add pyenv to environment
 export PYENV_ROOT="$HOME/.pyenv"
 command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"
-eval "$(pyenv init -)
+eval "$(pyenv init -)"
 
  # ngrok shell completions
 if command -v ngrok &>/dev/null; then
