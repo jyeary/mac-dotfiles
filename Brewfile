@@ -17,7 +17,8 @@ brew 'maven' # Apache Maven
 brew 'mercurial' # Mercurial Source Control System (SCS)
 brew 'mos' # Mongoose OS
 brew 'neovim' # Neovim Text Editor
-brew 'python' # Python Programming Language
+# brew 'python' # Python Programming Language
+brew 'pyenv'    # Install Python Environment Manager
 
 # Apps
 cask 'adobe-acrobat-reader'
@@ -33,7 +34,7 @@ cask 'google-drive'
 cask 'gpg-suite'
 cask 'gradle'
 cask 'groovy'
-cask 'graalvm-ce-java11'
+cask 'graalvm-ce-java17'
 cask 'jenv'
 cask 'jd-gui'
 cask 'keystore-explorer'

@@ -10,7 +10,8 @@ brew 'python'	# Python programming language
 
 cask 'zulu8'    # Java 8
 cask 'zulu11'   # Java 11
-cask 'zulu'     # Java 17+
+cask 'zulu17'   # Java 17
+cask 'zulu'     # Java 19+
 
 brew 'ant'	        # Apache Ant
 brew 'awscli'       # AWS CLI v 2.0
@@ -21,7 +22,10 @@ brew 'jq' 	        # JSON processor
 brew 'maven', args: ["ignore-dependencies"] # Apache Maven
 brew 'mercurial'    # Mercurial Source Control System (SCS)
 brew 'neovim' 	    # Neovim Text Editor
+brew 'pyenv'        # Install Python Environment Manager
+brew 'watch'        # watch command
 
+# Install gradle after Groovy
 brew 'gradle'	    # Gradle Build Tool
 
 #cask 'adobe-acrobat-reader'
@@ -44,6 +48,7 @@ cask 'ngrok'
 #cask 'p4v'
 cask 'postman'
 cask 'pycharm-ce'
+cask 'soapui'
 cask 'session-manager-plugin'
 cask 'slack'
 cask 'sourcetree'
