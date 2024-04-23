@@ -140,6 +140,8 @@ fi
 alias j!=jbang
 export PATH="$HOME/.jbang/bin:$PATH"
 
+source <(camel completion)
+
 # Add pyenv to environment
 export PYENV_ROOT="$HOME/.pyenv"
 command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"
